@@ -46,7 +46,7 @@ figure {
 .heading {
     font-family: var(--accent-font, "STIX Two Text", "Times New Roman", serif);
     font-weight: 600;
-    line-height: 27px;
+    line-height: 0.9;
     text-align: center;
 }
 
@@ -178,6 +178,9 @@ figure {
     display: flex;
     justify-content: space-between;
     padding-block: 20px;
+    border-top: 1px solid currentColor;
+    border-bottom: 1px solid currentColor;
+    align-items: center;
 }
 
 .header__theme-toggler {
