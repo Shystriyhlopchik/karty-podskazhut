@@ -1,3 +1,17 @@
+:root {
+    --bg-color: #F3EFEC;
+    --text-color: #312A4E;
+    --accent-color: #FFAB6B;
+    --main-font: Raleway, "Times New Roman", serif;
+    --accent-font: "STIX Two Text", "Times New Roman", serif;
+}
+
+.theme_dark {
+    --bg-color: #171717;
+    --text-color: #b3b3b3;
+    --accent-color: transparent;
+}
+
 *,
 *::before,
 *::after {
@@ -21,14 +35,6 @@ ol,
 li,
 figure {
     margin: 0;
-}
-
-:root {
-    --bg-color: #F3EFEC;
-    --text-color: #312A4E;
-    --accent-color: #FFAB6B;
-    --main-font: Raleway, "Times New Roman", serif;
-    --accent-font: "STIX Two Text", "Times New Roman", serif;
 }
 
 .header {
@@ -85,7 +91,7 @@ figure {
 }
 
 .content__blockquote {
-    width: 70%;
+    width: 75%;
     margin: 0 auto 1.5em auto;
     font-style: italic;
     line-height: 36px;
@@ -94,10 +100,12 @@ figure {
 .content__list {
     list-style-type: none;
     padding: 0;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .content__list li {
-    margin-inline-start: 40px;
+    margin-inline-start: 15px;
     line-height: 21.3px;
 }
 
@@ -128,6 +136,7 @@ figure {
     line-height: 21.13px;
     padding-block-end: 20px;
     padding-block-start: 20px;
+    border-bottom: 1px solid currentColor;
 }
 
 .content__picture {
@@ -192,7 +201,7 @@ figure {
 }
 
 .header__theme-button {
-    font-family: inherit;
+    font-family: var(--main-font, "Times New Roman", serif);
     color: currentColor;
     cursor: pointer;
     position: relative;
@@ -236,12 +245,6 @@ figure {
     z-index: -1;
     inset-inline-start: -4px;
     inset-block-end: 2px;
-}
-
-.theme_dark {
-    --bg-color: #171717;
-    --text-color: #b3b3b3;
-    --accent-color: transparent;
 }
 
 .theme_dark .colored-text::after {
